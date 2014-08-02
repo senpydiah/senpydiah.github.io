@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="assets/favicon.png"/>
+		<title>UTOPLE | Inside Tips Summarized</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href = "css/bootstrap.min.css" rel = "stylesheet">
+		<link href = "css/styles.css" rel = "stylesheet">
+	</head>
+        
+	<body>
+		<div class = "navbar navbar-inverse navbar-static-top">
+			<div class = "container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#"><img class="logo" src="assets/u.png"/></a>
+				</div>
+                               
+                <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navheadercollapse">
+					<span class = "icon-bar"></span>
+                     <span class = "icon-bar"></span>
+                     <span class = "icon-bar"></span>
+                </button>
+                               
+                <div class = "collapse navbar-collapse navheadercollapse">
+					<ul class = "nav navbar-nav navbar-right">
+						<li><a href = "#">About</a></li>
+						<li><a href = "#contact" data-toggle="modal">Contact</a></li>   <!--trigger js--and open a modal-->
+                        <li><a href="https://www.facebook.com/"><img class="logo" src ="assets/icon-fb.png"></a></li>
+						<li><a href="https://twitter.com/"><img class="logo" src="assets/icon-tw.png"></a></li>
+                    </ul>
+                </div>
+			</div>
+		</div>
+ 
+  <!----navigation bar ends--->
+  
+		<div class = "container">
+			<div class = "jumbotron">
+				<center><h1>UTople Brings Information</h1>
+                <p>This is the best site for inside tips information. Whether you are a high student, university students, professional and seniors, it is time to learn about changes happening. Noone will teach you how to succeed </p>
+				<a href ="Main2.html" class = "btn btn-primary">High School</a>
+				<a href ="Main2.html" class = "btn btn-success">University</a>
+				<a href ="Main2.html" class = "btn btn-info">Yuppies</a>
+                <a href ="Main2.html" class = "btn btn-warning">Seniors</a></center>
+			</div>
+        </div>
+			
+			<div class = "container">
+				<div class = "row">
+					<div class = "col-md-2">  
+						<h3><a href = "#">Finance</a></h3>
+						<p>How to manage your finance and investment for retirement. A lot of people dunno how to do it</p>
+						<a href = "#" class = "btn btn-default"> Read More</a>
+					</div>
+					
+					<div class = "col-md-2">
+						<h3><a href = "#">Getting into University</a></h3>
+						<p>University is where you start to build your career. Programs such as engineering, actuarial science are tough but can earn you an excellent starting pay salary. Take arts and you wont have nothing</p>
+						<a href = "#" class = "btn btn-default"> Read More</a>
+					</div>
+					
+					<div class = "col-md-2">
+						<h3><a href = "#">Thinking about Career</a></h3>
+						<p>Many people switch career to be able to gain new experience and new challenges</p>
+						<a href = "#" class = "btn btn-default"> Read More</a>
+					</div>
+										
+					<div class = "col-md-2">
+						<h3><a href = "#">Developing other Skills</a></h3>
+						<p>Is your program fulfilling enough or do you want to change career. University Programs have lots to offer in terms of your ambitions and how you want to accomplish</p>
+						<a href = "#" class = "btn btn-default"> Read More</a>
+					</div>
+					
+					<div class = "col-md-2">
+						<h3><a href = "#">Developing other Skills</a></h3>
+						<p>Interpersonal skills are the most important attributes of an individual in a workplace.</p>
+						<a href = "#" class = "btn btn-default"> Read More</a>
+					</div>
+					
+					<div class = "col-md-2">
+						<h3><a href = "#">Networking</a></h3>
+						<p>Networking is significant as it helps individual to build relationships and confidence.</p>
+						<a href = "#" class = "btn btn-default"> Read More</a>
+					</div>
+				</div>
+			</div>
+		
+ 
+ 
+ 
+ 
+ 
+ <!---footer--->
+                <div class = "navbar navbar-default navbar-fixed-bottom">
+					<div class = "container">
+						<p class = "navbar-text pull-left">Private Policy © Copyright 2014 | Michael Pydiah & Henry Chan </p>
+					</div>
+				</div>
+ 
+ <!---modal--Requires php for email-->
+				<div class = "modal fade" id = "contact" role = "dialog">
+                    <div class = "modal-dialog">
+                        <div class = "modal-content">
+                            <form class = "form-horizontal">
+								<div class = "modal-header">
+									<h4>Contact Us</h4>
+								</div>
+								<div class = "modal-body">
+									<div class = "form-group">
+										<label for = "contact-name" class = "col-lg-2 control-label">Name:</label>
+										<div class = "col-lg-10">
+											<input type ="text" class ="form-control" id ="contact-name" placeholder = "Full name">
+										</div>
+									</div>
+									
+									<div class = "form-group">
+										<label for = "contact-email" class = "col-lg-2 control-label">Email:</label>
+										<div class = "col-lg-10">
+											<input type ="email" class ="form-control" id ="contact-email" placeholder = "user@example.com">
+										</div>
+									</div>
+									
+									<div class = "form-group">
+										<label for = "contact-msg" class = "col-lg-2 control-label">Message:</label>
+										<div class = "col-lg-10">
+											<textarea class= "form-control" rows="8"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class = "modal-footer">
+									<a class = "btn btn-default" data-dismiss = "modal">Close</a>    
+									<button class= "btn btn-primary" type = "submit">Send</button>
+								</div>
+							</form>
+                        </div>
+                    </div>
+                </div>
+		<!---modal-->
+		
+                <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                <script src = "js/bootstrap.js"></script>
+               
+        </body>
+</html>

@@ -10,8 +10,8 @@ $( function() {
   $('#filters').on( 'click', '.navbutton', function() {
     var $this = $(this);
     // get group key
-    var $buttonGroup = $this.parents('.navbar-collapse');
-    var filterGroup = $buttonGroup.attr('data-filter-group');
+    var $parentGroup = $this.parents('.navButtonParent');
+    var filterGroup = $parentGroup.attr('data-filter-group');
     // set filter for group
     filters[ filterGroup ] = $this.attr('data-filter');
     // combine filters
@@ -23,13 +23,9 @@ $( function() {
     $container.isotope({ filter: filterValue });
   });
 
-  // change is-checked class on buttons
-  $('.navbar-collapse').each( function( i, buttonGroup ) {
-    var $buttonGroup = $( buttonGroup );
-    $buttonGroup.on( 'click', 'navbutton', function() {
-      $buttonGroup.find('.is-checked').removeClass('is-checked');
-      $( this ).addClass('is-checked');
-    });
+  // change active class on buttons
+  $('.navButtonParent').on('click','li', function(){
+     $(this).addClass('active').siblings().removeClass('active');
   });
   
 });

@@ -18,34 +18,54 @@ body{
 }
 
 
-li a.navbutton.is-checked.all:hover {
+li a.navbutton.all:hover, li.active a.navbutton.all, li.active a.navbutton.all:hover {
 	color: #333399;
 	cursor: pointer;
+	background-color: #fff;
 }
 
-li a.navbutton.finance:hover {
+
+
+li a.navbutton.finance:hover, li.active a.navbutton.finance, li.active a.navbutton.finance:hover{
 	color:#00b6f1;
 	cursor: pointer;
+	background-color: #fff;
 }
 
-li a.navbutton.education:hover {
+li a.navbutton.education:hover, li.active a.navbutton.education, li.active a.navbutton.education:hover {
 	color:#2eb394;
 	cursor: pointer;
+	background-color: #fff;
 }
 
-li a.navbutton.technology:hover {
+li a.navbutton.technology:hover, li.active a.navbutton.technology, li.active a.navbutton.technology:hover {
 	color:#ed125f;
 	cursor: pointer;
+	background-color: #fff;
 }
 
-li a.navbutton.instructables:hover {
+li a.navbutton.instructables:hover, li.active a.navbutton.instructables, li.active a.navbutton.instructables:hover {
 	color:#d1ad7d;
 	cursor: pointer;
+	background-color: #fff;
 }
 
-li a.navbutton.aboutUs:hover {
+li a.navbutton.aboutUs:hover, li.active a.navbutton.aboutUs, li.active a.navbutton.aboutUs:hover {
 	color:#333399;
 	cursor: pointer;
+	background-color: #fff;
+}
+
+li a.navbutton.youth:hover, li.active a.navbutton.youth, li.active a.navbutton.youth:hover {
+	color:#333399;
+	cursor: pointer;
+	background-color: #fff;
+}
+
+li a.navbutton.student:hover, li.active a.navbutton.student, li.active a.navbutton.student:hover {
+	color:#333399;
+	cursor: pointer;
+	background-color: #fff;
 }
 
 .project-thumbnail {

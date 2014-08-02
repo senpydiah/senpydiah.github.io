@@ -32,8 +32,8 @@
 					<!---toggle-Michael-->	
 					
 					<div class="collapse navbar-collapse navheadercollapse">
-						<ul class="nav navbar-nav" data-filter-group="type">
-							<li><a class="navbutton is-checked all" data-filter="*">ALL</a></li>
+						<ul class="navButtonParent nav navbar-nav" data-filter-group="type">
+							<li class="active"><a class="navbutton all" data-filter="*">ALL</a></li>
 							<li><a class="navbutton finance" data-filter=".finance">FINANCE</a></li>
 							<li><a class="navbutton education" data-filter=".education">EDUCATION</a></li>
 							<li><a class="navbutton technology" data-filter=".technology">TECHNOLOGY</a></li>
@@ -57,8 +57,8 @@
 			    <div class="sidebar-nav">
 			      <div class="navbar navbar-default" role="navigation">
 			        <div class="collapse sidebar-navbar-collapse navbar-collapse">
-			          <ul class="nav navbar-nav" data-filter-group="people">
-			            <li><a class="navbutton is-checked all" data-filter="*">ALL</a></li>
+			          <ul class="navButtonParent nav navbar-nav" data-filter-group="people">
+			            <li class="active"><a class="navbutton all" data-filter="">ALL</a></li>
 			            <li><a class="navbutton youth" data-filter=".youth">YOUTH</a></li>
 			            <li><a class="navbutton student" data-filter=".student">STUDENT</a></li>
 			          </ul>
@@ -103,44 +103,6 @@
 	<script src="js/styles.js"></script>
 	<link rel="stylesheet" href="css/styles.css" type="text/css"/>
 	
-	<script>
-
-$( function() {
-  // init Isotope
-  var $container = $('.isotope').isotope({
-    itemSelector: '.infographics'
-  });
-
-  // store filter for each group
-  var filters = {};
-
-  $('#filters').on( 'click', '.navbutton', function() {
-    var $this = $(this);
-    // get group key
-    var $buttonGroup = $this.parents('.nav');
-    var filterGroup = $buttonGroup.attr('data-filter-group');
-    // set filter for group
-    filters[ filterGroup ] = $this.attr('data-filter');
-    // combine filters
-    var filterValue = '';
-    for ( var prop in filters ) {
-      filterValue += filters[ prop ];
-    }
-    // set filter for Isotope
-    $container.isotope({ filter: filterValue });
-  });
-
-  // change is-checked class on buttons
-  $('.nav').each( function( i, buttonGroup ) {
-    var $buttonGroup = $( buttonGroup );
-    $buttonGroup.on( 'click', 'navbutton', function() {
-      $buttonGroup.find('.is-checked').removeClass('is-checked');
-      $( this ).addClass('is-checked');
-    });
-  });
-  
-});	
-</script>
 
 </div>
 </html>

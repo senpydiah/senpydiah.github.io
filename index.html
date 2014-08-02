@@ -15,7 +15,7 @@
 
 	<div id="body">
 		<body>
-
+			<div id="filters">
 			<!--navbar-->
 			<nav class="navbar navbar-default center" role="navigation">
 				<div class="container">
@@ -31,7 +31,7 @@
                     </button>
 					<!---toggle-Michael-->	
 					
-					<div id="filters" class="collapse navbar-collapse navheadercollapse">
+					<div class="collapse navbar-collapse navheadercollapse">
 						<ul class="nav navbar-nav" data-filter-group="type">
 							<li><a class="navbutton is-checked all" data-filter="*">ALL</a></li>
 							<li><a class="navbutton finance" data-filter=".finance">FINANCE</a></li>
@@ -56,7 +56,7 @@
 			  <div class="col-md-2">
 			    <div class="sidebar-nav">
 			      <div class="navbar navbar-default" role="navigation">
-			        <div id="filters" class="collapse sidebar-navbar-collapse navbar-collapse">
+			        <div class="collapse sidebar-navbar-collapse navbar-collapse">
 			          <ul class="nav navbar-nav" data-filter-group="people">
 			            <li><a class="navbutton is-checked all" data-filter="*">ALL</a></li>
 			            <li><a class="navbutton youth" data-filter=".youth">YOUTH</a></li>
@@ -70,55 +70,28 @@
 			  <!--main content-->
 			  <div class="col-md-8">
 				<div class="iso">
-					<div class="infographics education youth project-thumbnail"><img src="assets/1.png"/>
-					</div>
-
-					<div class="infographics technology student project-thumbnail"><img src="assets/1.png"/>
-					</div>
-
-					<div class="infographics technology youth project-thumbnail"><img src="assets/1.png"/>
-					</div>
-
-					<div class="infographics education project-thumbnail"><img src="assets/1.png"/>
-					</div>
-
-					<div class="infographics technology project-thumbnail"><img src="assets/1.png"/>
-					</div>
-
-					<div class="infographics technology project-thumbnail"><img src="assets/1.png"/>
-					</div>
-
-					<div class="infographics education project-thumbnail"><img src="assets/1.png"/>
-					</div>
-
-					<div class="infographics technology project-thumbnail"><img src="assets/1.png"/>
-					</div>
-
-					<div class="infographics technology project-thumbnail"><img src="assets/1.png"/>
-					</div>
-
-					<div class="infographics education project-thumbnail"><img src="assets/1.png"/>
-					</div>
-
-					<div class="infographics technology project-thumbnail"><img src="assets/1.png"/>
-					</div>
-
-					<div class="infographics aboutUs project-thumbnail"><img src="assets/0.png"/>
-					</div>
+					<div class="infographics finance youth project-thumbnail"><img src="assets/1.png"/></div>
+					<div class="infographics education youth project-thumbnail"><img src="assets/2.png"/></div>
+					<div class="infographics technology youth project-thumbnail"><img src="assets/3.png"/></div>
+					<div class="infographics instructables youth project-thumbnail"><img src="assets/4.png"/></div>
+					<div class="infographics finance student project-thumbnail"><img src="assets/0.png"/></div>
+					<div class="infographics education student project-thumbnail"><img src="assets/1.png"/></div>
+					<div class="infographics technology student project-thumbnail"><img src="assets/2.png"/></div>
+					<div class="infographics instructables student project-thumbnail"><img src="assets/3.png"/></div>
+					<div class="infographics aboutUs project-thumbnail"><img src="assets/0.png"/></div>
 				</div>
+  			  </div>
   			  </div>
 			</div> 
 
-
-
+			</div>
 		</body>
 	</div>
 
 		<!--footer-->
 	<footer class="bs-docs-footer">
 		<div class="container">
-			<p>Private Policy</p>
-			<p>© Copyright 2014 | Michael Pydiah & Henry Chan</p>
+			<p>Private Policy © Copyright 2014 | Michael Pydiah & Henry Chan</p>
 		</div>
 
 	</footer>
@@ -130,44 +103,6 @@
 	<script src="js/styles.js"></script>
 	<link rel="stylesheet" href="css/styles.css" type="text/css"/>
 	
-	<script>
-
-$( function() {
-  // init Isotope
-  var $container = $('.isotope').isotope({
-    itemSelector: '.infographics'
-  });
-
-  // store filter for each group
-  var filters = {};
-
-  $('#filters').on( 'click', '.navbutton', function() {
-    var $this = $(this);
-    // get group key
-    var $buttonGroup = $this.parents('.nav');
-    var filterGroup = $buttonGroup.attr('data-filter-group');
-    // set filter for group
-    filters[ filterGroup ] = $this.attr('data-filter');
-    // combine filters
-    var filterValue = '';
-    for ( var prop in filters ) {
-      filterValue += filters[ prop ];
-    }
-    // set filter for Isotope
-    $container.isotope({ filter: filterValue });
-  });
-
-  // change is-checked class on buttons
-  $('.nav').each( function( i, buttonGroup ) {
-    var $buttonGroup = $( buttonGroup );
-    $buttonGroup.on( 'click', 'navbutton', function() {
-      $buttonGroup.find('.is-checked').removeClass('is-checked');
-      $( this ).addClass('is-checked');
-    });
-  });
-  
-});	
-</script>
 
 </div>
 </html>

@@ -12,6 +12,10 @@ body{
 	background-color: white;
 }
 
+.navbar-brand{
+	height: 50px;
+}
+
 .logo{
 	max-width: 100%;
 	max-height: 100%;
@@ -23,8 +27,6 @@ li a.navbutton.all:hover, li.active a.navbutton.all, li.active a.navbutton.all:h
 	cursor: pointer;
 	background-color: #fff;
 }
-
-
 
 li a.navbutton.finance:hover, li.active a.navbutton.finance, li.active a.navbutton.finance:hover{
 	color:#00b6f1;
@@ -68,6 +70,24 @@ li a.navbutton.student:hover, li.active a.navbutton.student, li.active a.navbutt
 	background-color: #fff;
 }
 
+li a.navbutton.aboutUs:hover, li.active a.navbutton.aboutUs, li.active a.navbutton.aboutUs:hover {
+	color:#333399;
+	cursor: pointer;
+	background-color: #fff;
+}
+
+li a.navbutton.youth:hover, li.active a.navbutton.youth, li.active a.navbutton.youth:hover {
+	color:#62A321;
+	cursor: pointer;
+	background-color: #fff;
+}
+
+li a.navbutton.student:hover, li.active a.navbutton.student, li.active a.navbutton.student:hover {
+	color:#CC0000;
+	cursor: pointer;
+	background-color: #fff;
+}
+
 .project-thumbnail {
 	height: 200px;	
 	display: inline-block;
@@ -94,11 +114,11 @@ html, body{
 }
 
 #body{
-    padding-bottom: 100px;    /* height of footer */
+    padding-bottom: 20px;    /* height of footer */
 }
 
 footer{
-    height: 100px; 
+    height: 20px; 
     width:100%;
     position: absolute;
     left: 0;
@@ -106,10 +126,6 @@ footer{
     border-top:solid;
     border-top-width:2px;
     border-color:#eeeeee;
-}
-
-.navbar-brand{
-	height: 50px;
 }
 
 /* make sidebar nav vertical */ 

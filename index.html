@@ -16,81 +16,81 @@
 	<div id="body">
 		<body>
 			<div id="filters">
-			<!--navbar-->
-			<nav class="navbar navbar-default center" role="navigation">
-				<div class="container">
-					<div class="navbar-header">
-						<a class="navbar-brand" href="#"><img class="logo" src="assets/logo.png"/></a>
+				<!--navbar-->
+				<nav class="navbar navbar-default center" role="navigation">
+					<div class="container">
+						<div class="navbar-header">
+							<a class="navbar-brand" href=""><img class="logo" src="assets/logo.png"/></a>
+						</div>
+						
+						<!---display toggle when collapse-->
+						<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navheadercollapse">
+	                                        <span class = "icon-bar"></span>
+	                                        <span class = "icon-bar"></span>
+	                                        <span class = "icon-bar"></span>
+	                    </button>
+						<!---toggle-Michael-->	
+						
+						<div class="collapse navbar-collapse navheadercollapse">
+							<ul class="navButtonParent nav navbar-nav" data-filter-group="type">
+								<li class="active"><a class="navbutton all" data-filter="*">ALL</a></li>
+								<li><a class="navbutton finance" data-filter=".finance">FINANCE</a></li>
+								<li><a class="navbutton education" data-filter=".education">EDUCATION</a></li>
+								<li><a class="navbutton technology" data-filter=".technology">TECHNOLOGY</a></li>
+								<li><a class="navbutton instructables" data-filter=".instructables">INSTRUCTABLES</a></li>
+							</ul>
+
+							<ul class="nav navbar-nav navbar-right" data-filter-group="aboutUs">
+								<li><a href ="Main.html">HOME</a></li>
+								<li><a class="navbutton aboutUs" data-filter=".aboutUs">ABOUT US</a></li>
+								<li><a href="https://www.facebook.com/"><img class="logo" src ="assets/icon-fb.png"></a></li>
+								<li><a href="https://twitter.com/"><img class="logo" src="assets/icon-tw.png"></a></li>
+							</ul>
+						</div>
 					</div>
-					
-					<!---display toggle when collapse-->
-					<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navheadercollapse">
-                                        <span class = "icon-bar"></span>
-                                        <span class = "icon-bar"></span>
-                                        <span class = "icon-bar"></span>
-                    </button>
-					<!---toggle-Michael-->	
-					
-					<div class="collapse navbar-collapse navheadercollapse">
-						<ul class="navButtonParent nav navbar-nav" data-filter-group="type">
-							<li class="active"><a class="navbutton all" data-filter="*">ALL</a></li>
-							<li><a class="navbutton finance" data-filter=".finance">FINANCE</a></li>
-							<li><a class="navbutton education" data-filter=".education">EDUCATION</a></li>
-							<li><a class="navbutton technology" data-filter=".technology">TECHNOLOGY</a></li>
-							<li><a class="navbutton instructables" data-filter=".instructables">INSTRUCTABLES</a></li>
-						</ul>
+				</nav>
 
-						<ul class="nav navbar-nav navbar-right" data-filter-group="about">
-							<li><a href ="Main.html">HOME</a></li>
-							<li><a class="navbutton aboutUs" data-filter=".aboutUs">ABOUT US</a></li>
-							<li><a href="https://www.facebook.com/"><img class="logo" src ="assets/icon-fb.png"></a></li>
-							<li><a href="https://twitter.com/"><img class="logo" src="assets/icon-tw.png"></a></li>
-						</ul>
+
+				<div class="row">
+				  <!--navbar2-->
+					<div class="col-md-2">
+					    <div class="sidebar-nav">
+					      <div class="navbar navbar-default" role="navigation">
+					        <div class="collapse sidebar-navbar-collapse navbar-collapse">
+					          <ul class="navButtonParent nav navbar-nav" data-filter-group="people">
+					            <li class="active"><a class="navbutton all" data-filter="">ALL</a></li>
+					            <li><a class="navbutton youth" data-filter=".youth">YOUTH</a></li>
+					            <li><a class="navbutton student" data-filter=".student">STUDENT</a></li>
+					          </ul>
+					        </div><!--/.nav-collapse -->
+					      </div>
+					    </div>
 					</div>
-				</div>
-			</nav>
 
-
-			<div class="row">
-			  <!--navbar2-->
-			  <div class="col-md-2">
-			    <div class="sidebar-nav">
-			      <div class="navbar navbar-default" role="navigation">
-			        <div class="collapse sidebar-navbar-collapse navbar-collapse">
-			          <ul class="navButtonParent nav navbar-nav" data-filter-group="people">
-			            <li class="active"><a class="navbutton all" data-filter="">ALL</a></li>
-			            <li><a class="navbutton youth" data-filter=".youth">YOUTH</a></li>
-			            <li><a class="navbutton student" data-filter=".student">STUDENT</a></li>
-			          </ul>
-			        </div><!--/.nav-collapse -->
-			      </div>
-			    </div>
-			  </div>
-
-			  <!--main content-->
-			  <div class="col-md-8">
-				<div class="iso">
-					<div class="infographics finance youth project-thumbnail"><img src="assets/1.png"/></div>
-					<div class="infographics education youth project-thumbnail"><img src="assets/2.png"/></div>
-					<div class="infographics technology youth project-thumbnail"><img src="assets/3.png"/></div>
-					<div class="infographics instructables youth project-thumbnail"><img src="assets/4.png"/></div>
-					<div class="infographics finance student project-thumbnail"><img src="assets/0.png"/></div>
-					<div class="infographics education student project-thumbnail"><img src="assets/1.png"/></div>
-					<div class="infographics technology student project-thumbnail"><img src="assets/2.png"/></div>
-					<div class="infographics instructables student project-thumbnail"><img src="assets/3.png"/></div>
-					<div class="infographics aboutUs project-thumbnail"><img src="assets/0.png"/></div>
-				</div>
-  			  </div>
-  			  </div>
+				  <!--main content-->
+				  	<div class="col-md-8">
+						<div class="iso">
+							<div class="infographics finance youth project-thumbnail"><img src="assets/1.png"/></div>
+							<div class="infographics education youth project-thumbnail"><img src="assets/2.png"/></div>
+							<div class="infographics technology youth project-thumbnail"><img src="assets/3.png"/></div>
+							<div class="infographics instructables youth project-thumbnail"><img src="assets/4.png"/></div>
+							<div class="infographics finance student project-thumbnail"><img src="assets/0.png"/></div>
+							<div class="infographics education student project-thumbnail"><img src="assets/1.png"/></div>
+							<div class="infographics technology student project-thumbnail"><img src="assets/2.png"/></div>
+							<div class="infographics instructables student project-thumbnail"><img src="assets/3.png"/></div>
+							<div class="infographics aboutUs project-thumbnail"><img src="assets/0.png"/></div>
+						</div>
+	  			  	</div>
+	  			</div>
 			</div> 
 
-			</div>
 		</body>
 	</div>
 
 		<!--footer-->
 	<footer class="bs-docs-footer">
 		<div class="container">
+			<p></p>
 			<p>Private Policy © Copyright 2014 | Michael Pydiah & Henry Chan</p>
 		</div>
 

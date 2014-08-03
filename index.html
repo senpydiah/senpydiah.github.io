@@ -70,15 +70,15 @@
 				  <!--main content-->
 				  	<div class="col-md-8">
 						<div class="iso">
-							<div class="infographics finance youth project-thumbnail"><img src="assets/1.png"/></div>
-							<div class="infographics education youth project-thumbnail"><img src="assets/2.png"/></div>
-							<div class="infographics technology youth project-thumbnail"><img src="assets/3.png"/></div>
-							<div class="infographics instructables youth project-thumbnail"><img src="assets/4.png"/></div>
-							<div class="infographics finance student project-thumbnail"><img src="assets/0.png"/></div>
-							<div class="infographics education student project-thumbnail"><img src="assets/1.png"/></div>
-							<div class="infographics technology student project-thumbnail"><img src="assets/2.png"/></div>
-							<div class="infographics instructables student project-thumbnail"><img src="assets/3.png"/></div>
-							<div class="infographics aboutUs project-thumbnail"><img src="assets/0.png"/></div>
+							<a class="fancybox" rel="group" href="assets/1.png"><div class="infographics finance youth project-thumbnail"><img src="assets/1.png"/></div></a>
+							<a class="fancybox" rel="group" href="assets/2.png"><div class="infographics education youth project-thumbnail"><img src="assets/2.png"/></div></a>
+							<a class="fancybox" rel="group" href="assets/3.png"><div class="infographics technology youth project-thumbnail"><img src="assets/3.png"/></div></a>
+							<a class="fancybox" rel="group" href="assets/4.png"><div class="infographics instructables youth project-thumbnail"><img src="assets/4.png"/></div></a>
+							<a class="fancybox" rel="group" href="assets/0.png"><div class="infographics finance student project-thumbnail"><img src="assets/0.png"/></div></a>
+							<a class="fancybox" rel="group" href="assets/1.png"><div class="infographics education student project-thumbnail"><img src="assets/1.png"/></div></a>
+							<a class="fancybox" rel="group" href="assets/2.png"><div class="infographics technology student project-thumbnail"><img src="assets/2.png"/></div></a>
+							<a class="fancybox" rel="group" href="assets/3.png"><div class="infographics instructables student project-thumbnail"><img src="assets/3.png"/></div></a>
+							<a class="fancybox" rel="group" href="assets/0.png"><div class="infographics aboutUs project-thumbnail"><img src="assets/0.png"/></div></a>
 						</div>
 	  			  	</div>
 	  			</div>
@@ -101,8 +101,16 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/isotope.pkgd.js"></script>
 	<script src="js/styles.js"></script>
+	<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js"></script>
 	<link rel="stylesheet" href="css/styles.css" type="text/css"/>
 	
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
 
 </div>
 </html>

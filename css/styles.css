@@ -150,4 +150,7 @@ footer{
   }
 }
 
-
+.fancybox-close {
+    top: 0;
+    right: 0;
+}

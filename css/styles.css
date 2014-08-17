@@ -96,8 +96,8 @@ li a.navbutton.student:hover, li.active a.navbutton.student, li.active a.navbutt
 	padding: 0;
 	overflow: hidden;
 	float: left;
-	left:0px !important;
-	top:0px !important;
+	left:10px !important;
+	top:10px !important;
 }
 
 .project-thumbnail img {
@@ -164,7 +164,7 @@ footer{
 	perspective: 1000;
 	height: 200px;
 	width:133px;
-	margin:0 0 0 0;
+	margin:0 0 10px 10px;
 	display:inline-block;
 }
 	/* flip the pane when hovered */
@@ -189,8 +189,8 @@ footer{
 	backface-visibility: hidden;
 
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 0px;
+	left: 0px;
 }
 
 /* front pane, placed above back */
@@ -204,11 +204,26 @@ footer{
 }
 
 #test{
-	background-color: #00b6f1;
+	background-color: #ffd685;
 	height:200px;
 	width: 133px;
+	font-size: 200%;
+	line-height: 1.3em;
+	padding:10px 10px 10px 10px;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .flip-container .flipper .back div{
 	left:0px !important;
+}
+
+
+/*fancybox fix*/
+.fancybox-prev {
+    visibility: hidden;
+}
+
+.fancybox-next {
+    visibility: hidden;
 }

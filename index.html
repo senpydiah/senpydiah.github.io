@@ -83,11 +83,11 @@
 						<div class="infographics finance youth flip-container" ontouchstart="this.classList.toggle('hover');">
 							<div class="flipper">
 								<div class="front">
-									<a class="fancybox" rel="group" href="assets/1.png"><div class="project-thumbnail"><img src="assets/1.png"/></div></a>
+									<div class="project-thumbnail"><img src="assets/1.png"/></div>
 								</div>
 
-								<div class="back">
-									<div><p id="test">test test test test test</p></div>
+								<div class="back" id="test">
+									<a class="fancybox" rel="group" href="assets/1.png">Buying a Car</a>
 								</div>
 							</div>
 						</div>
@@ -98,7 +98,7 @@
 									<a class="fancybox" rel="group" href="assets/1.png"><div class="project-thumbnail"><img src="assets/1.png"/></div></a>
 								</div>
 
-								<div class="back">
+								<div class="back mybox">
 									<div><p id="test">test test test test test</p></div>
 								</div>
 							</div>
@@ -234,6 +234,35 @@
 	$(document).ready(function() {
 		$(".fancybox").fancybox();
 	});
+</script>
+
+<script type="text/javascript">
+	$(".fancybox")
+    .attr('rel', 'gallery')
+    .fancybox({
+        padding : 0
+    });
+</script>
+
+<script type="text/javascript">
+	$(".fancybox")
+	    .attr('rel', 'gallery')
+	    .fancybox({
+	        padding    : 0,
+	        margin     : 5,
+	        nextEffect : 'fade',
+	        prevEffect : 'none',
+	        autoCenter : false,
+	        afterLoad  : function () {
+	            $.extend(this, {
+	                aspectRatio : false,
+	                type    : 'html',
+	                width   : '100%',
+	                height  : '100%',
+	                content : '<div class="fancybox-image" style="background-image:url(' + this.href + '); background-size: cover; background-position:50% 50%;background-repeat:no-repeat;height:100%;width:100%;" /></div>'
+	            });
+	        }
+	    });
 </script>
 
 </div>

@@ -200,7 +200,7 @@ footer{
 
 /* back, initially hidden pane */
 .back {
-	transform: rotateY(180deg);
+	transform: rotateY(-180deg);
 }
 
 #test{
